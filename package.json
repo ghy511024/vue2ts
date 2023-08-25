@@ -1,14 +1,14 @@
 {
-  "name": "vut2ts",
-  "version": "0.1.0",
+  "name": "vue2ts-cli",
+  "version": "0.0.2",
   "main": "dist/Main.js",
   "scripts": {
     "build": "tsc",
-    "test": "vut2ts src"
+    "test": "vue2ts src"
   },
   "description": "vue template to es6 string",
   "bin": {
-    "vut2ts": "bin/vue2ts.js"
+    "vue2ts": "bin/vue2ts.js"
   },
   "keywords": [
     "vue", "template"
@@ -20,6 +20,10 @@
   "author": "gonghongyu",
   "dependencies": {
     "@vue/compiler-sfc": "^3.2.37"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ghy511024/vue2ts.git"
   },
   "devDependencies": {
     "@types/node": "^18.7.11",

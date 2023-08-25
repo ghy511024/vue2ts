@@ -4,15 +4,15 @@
 
 ### install
 ```shell
-npm i vut2ts -g
+npm i vue2ts-cli -g
 ```
 
 ### use
 ```shell
 # single file
-vut2ts ./src/demo.vue
+vue2ts ./src/demo.vue
 # directory
-vut2ts ./src
+vue2ts ./src
 ```
 
 ### demo
@@ -45,7 +45,7 @@ export default {
  ```
 * 2 compile (Demo.vue => Demo.ts)
 ```shell
-vut2ts ./demo.vue
+vue2ts ./demo.vue
 ```
 * 3 Demo.ts
 
@@ -67,6 +67,7 @@ const _tmp = {
 export default {
     expData: fun,
     setup(ctx, houseList: House[]) {
+        
         let data = {}
         if (typeof _tmp["data"] == "function") {
             data = _tmp["data"]();
@@ -121,7 +122,7 @@ const data: House[] = [
     },
     {
         img: "http://xxx.com/b.png",
-        title: "nice vut2ts",
+        title: "nice vue2ts",
         id: 456
     }
 ]
@@ -136,7 +137,7 @@ output
     <li class="houseItem xixi"><h1 houseId="123">hello word</h1>
         <img src="http://xxx.com/a.png"/>
     </li>
-    <li class="houseItem"><h1 houseId="456">nice vut2ts</h1>
+    <li class="houseItem"><h1 houseId="456">nice vue2ts</h1>
         <img src="http://xxx.com/b.png"/>
     </li>
 </ul>
